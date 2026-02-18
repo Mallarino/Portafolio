@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import PageNotFound from "../pages/PageNotFound.jsx";
+import PageNotFound from "../pages/NotFound.jsx";
 
-import Home from "../pages/home.jsx";
+import Home from "../pages/Home.jsx";
 import All from "../pages/All.jsx";
 import Projects from "../pages/Projects.jsx";
 import Images from "../pages/Images.jsx";
@@ -10,22 +10,20 @@ import Education from "../pages/Education.jsx";
 
 const AppRoutes = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/All" element={<All />} />
-        <Route path="/Todo" element={<All />} />
-        <Route path="/Education" element={<Education />} />
-        <Route path="/Educacion" element={<Education />} />
-        <Route path="/Experience" element={<Experience />} />
-        <Route path="/Experiencia" element={<Experience />} />
-        <Route path="/Images" element={<Images />} />
-        <Route path="/Imagenes" element={<Images />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Projectos" element={<Projects />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/all" element={<All />} />
+      <Route path="/todo" element={<All />} />
+      <Route path="/education" element={<Education />} />
+      <Route path="/educacion" element={<Education />} />
+      <Route path="/experience" element={<Experience />} />
+      <Route path="/experiencia" element={<Experience />} />
+      <Route path="/images" element={<Images />} />
+      <Route path="/imagenes" element={<Images />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/proyectos" element={<Projects />} />
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
   );
 };
 

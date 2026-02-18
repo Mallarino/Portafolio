@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 export default function Images() {
   return (
-    <div>Images</div>
+    <>
+      <Navbar />
+    </>
   )
 }
