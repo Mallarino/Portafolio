@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Results from '../components/Results'
 import { projects } from '../data/projects'
 import SearchResultItem from '../components/SearchResultItem'
+import supanote from '../assets/projects/supanote.png'
 
 export default function Projects() {
   return (
@@ -12,7 +13,7 @@ export default function Projects() {
         <Results number={projects.length} />
 
         {projects.map((item) => (
-          <SearchResultItem title={item.title} link={item.link} description={item.description} stack={item.stack} />
+          <SearchResultItem title={item.title} link={item.link} image={supanote} description={item.description} stack={item.stack} />
         ))}
 
       </div>
