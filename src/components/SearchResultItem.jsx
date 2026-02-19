@@ -5,7 +5,7 @@ export default function SearchResultItem({ link, title, image, description, stac
   return (
     <div className='my-6'>
       <div className='text-gray-500'>{link}</div>
-      <a href='#me' className='text-purple-700 text-xl'>{title}</a>
+      <a href={link} target='blank' className='text-purple-700 text-xl'>{title}</a>
       <div className='flex gap-5'>
         { image && <img src={image} alt="" className='w-50' /> }
         <div>
