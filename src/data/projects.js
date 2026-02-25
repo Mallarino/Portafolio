@@ -1,6 +1,8 @@
 
 import supanote from '../assets/projects/supanote.png'
+import skyvault from '../assets/projects/SkyVault.png'
 import test from '../assets/projects/test.png'
+import portfolio from '../assets/projects/portfolio.png'
 
 export const projects = [
   {
@@ -15,8 +17,8 @@ export const projects = [
   {
     id: 2,
     title: "SkyVault",
-    link: "<Direccion de github>",
-    image: test,
+    link: "https://github.com/Mallarino/SkyVault",
+    image: skyvault,
     description:
       "Aplicación móvil de aviación desarrollada con React Native y Expo, diseñada para registrar avistamientos de aeronaves, almacenar fotografías y gestionar información asociada a cada registro. Integra Firebase para autenticación y almacenamiento en la nube.",
     stack: "React Native · Expo · Firebase · RapidAPI"
@@ -25,7 +27,7 @@ export const projects = [
     id: 3,
     title: "Portafolio",
     link: "/",
-    image: test,
+    image: portfolio,
     description:
       "Portafolio personal inspirado en el famoso buscador de Google.",
     stack: "React · Tailwind CSS"

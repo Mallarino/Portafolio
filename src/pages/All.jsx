@@ -9,9 +9,6 @@ import PeopleAsk from '../components/PeopleAsk/PeopleAsk'
 
 export default function All() {
 
-  console.log(all);
-  
-
   return (
     <>
       <Navbar />
@@ -19,7 +16,7 @@ export default function All() {
       <div className='ml-60 mt-4 w-150'>
         <Results number={all.length} />
 
-        <SearchResultItem title={all[0].title} description={all[0].description} />
+        <SearchResultItem section={"> Sobre mi"} link={""} title={all[0].title} description={all[0].description} />
 
         <PeopleAsk />
 

@@ -9,7 +9,7 @@ export default function Results({ number }) {
 
     return (
         <div className='text-gray-500'>
-            About {number} Results ({randomNumber} seconds)
+            Cerca de {number} Resultados ({randomNumber} segundos)
 
         </div>
     )

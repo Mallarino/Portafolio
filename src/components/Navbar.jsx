@@ -19,7 +19,7 @@ export default function Navbar() {
                 />
             </div>
 
-            <div className='flex gap-6 ml-65 text-gray-600'>
+            <div className='flex gap-10 ml-65 text-gray-600'>
 
                 <NavLink
                     to="/todo"
@@ -47,19 +47,6 @@ export default function Navbar() {
 
 
                 <NavLink
-                    to="/imagenes"
-                    className={({ isActive }) =>
-                        `flex items-center gap-2 pb-2 ${isActive
-                            ? "border-b-2 border-blue-500 text-blue-600"
-                            : "text-gray-600"
-                        }`
-                    }
-                >
-                    <FaRegImage /> Imagenes
-                </NavLink>
-
-
-                <NavLink
                     to="/experiencia"
                     className={({ isActive }) =>
                         `flex items-center gap-2 pb-2 ${isActive
@@ -81,7 +68,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaGraduationCap /> Educacion
+                    <FaGraduationCap /> Educación
                 </NavLink>
 
 

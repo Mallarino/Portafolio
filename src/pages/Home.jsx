@@ -11,15 +11,8 @@ export default function Home() {
             {/* Navbar */}
             <div className="flex justify-end items-center gap-6 px-8 py-4 text-gray-600">
 
-                <Link
-                    to="/all"
-                    className="hover:text-black transition-colors duration-200"
-                >
-                    Email
-                </Link>
-
                 <a
-                    href="https://github.com/"
+                    href="https://github.com/Mallarino"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-black transition-colors duration-200"

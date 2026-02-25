@@ -4,7 +4,6 @@ import PageNotFound from "../pages/NotFound.jsx";
 import Home from "../pages/Home.jsx";
 import All from "../pages/All.jsx";
 import Projects from "../pages/Projects.jsx";
-import Images from "../pages/Images.jsx";
 import Experience from "../pages/Experience.jsx";
 import Education from "../pages/Education.jsx";
 
@@ -18,8 +17,6 @@ const AppRoutes = () => {
       <Route path="/educacion" element={<Education />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/experiencia" element={<Experience />} />
-      <Route path="/images" element={<Images />} />
-      <Route path="/imagenes" element={<Images />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/proyectos" element={<Projects />} />
       <Route path="*" element={<PageNotFound />} />
