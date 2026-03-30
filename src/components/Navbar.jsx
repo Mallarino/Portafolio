@@ -1,22 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchInput from '../components/SearchInput'
 import { FaToolbox, FaRegImage, FaRegBuilding, FaGraduationCap, FaSearch } from "react-icons/fa";
 import Letters from '../components/Letters'
 import profilePhoto from "../assets/profilePhoto.jpg"
 import { NavLink } from "react-router-dom";
+import { MdOutlineGridOn } from "react-icons/md";
+import AppSelection from './AppSelection';
 
 
 export default function Navbar() {
+
+    const [show, setShow] = useState(false)
+
     return (
         <>
-            <div className='flex items-center m-7 gap-8'>
+            <div className='flex items-center m-7 gap-10'>
                 <Letters />
                 <SearchInput />
-                <img
-                    src={profilePhoto}
-                    className="w-12 h-12 ml-auto rounded-full object-cover object-right border border-gray-200 shadow-sm"
-                    alt="Profile"
-                />
+
+                <div className='flex items-center ml-auto gap-5'>
+                    <div className="relative">
+                        <button onClick={() => setShow(!show)}>
+                            <MdOutlineGridOn className="text-2xl text-gray-500 hover:text-gray-700" />
+                        </button>
+
+                        {show && (
+                            <div>
+                                <AppSelection />
+                            </div>
+                        )}
+                    </div>
+
+                    <img
+                        src={profilePhoto}
+                        className="w-12 h-12 ml-auto rounded-full object-cover object-right border border-gray-200 shadow-sm"
+                        alt="Profile"
+                    />
+
+                </div>
             </div>
 
             <div className='flex gap-10 ml-65 text-gray-600'>
