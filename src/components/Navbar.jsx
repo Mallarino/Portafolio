@@ -1,16 +1,24 @@
 import React, { useState } from 'react'
 import SearchInput from '../components/SearchInput'
-import { FaToolbox, FaRegImage, FaRegBuilding, FaGraduationCap, FaSearch } from "react-icons/fa";
+import { FaToolbox, FaRegBuilding, FaGraduationCap, FaSearch } from "react-icons/fa";
+import { IoLanguage } from "react-icons/io5";
 import Letters from '../components/Letters'
 import profilePhoto from "../assets/profilePhoto.jpg"
 import { NavLink } from "react-router-dom";
 import { MdOutlineGridOn } from "react-icons/md";
+import { useTranslation } from 'react-i18next';
 import AppSelection from './AppSelection';
+import LanguageSwitcher from './LanguageSwitcher';
+
 
 
 export default function Navbar() {
 
     const [show, setShow] = useState(false)
+    const [showLanguage, setShowLanguage] = useState(false)
+
+    const { t } = useTranslation()
+
 
     return (
         <>
@@ -18,7 +26,19 @@ export default function Navbar() {
                 <Letters />
                 <SearchInput />
 
-                <div className='flex items-center ml-auto gap-5'>
+
+                <div className='flex items-center ml-auto gap-10'>
+                    <div className="relative">
+                        <button onClick={() => setShowLanguage(!showLanguage)}>
+                            <IoLanguage className="text-2xl text-gray-500 hover:text-gray-700" />
+                        </button>
+                        {showLanguage && (
+                            <div>
+                                <LanguageSwitcher closeMenu={() => setShowLanguage(false)}/>
+                            </div>
+                        )}
+                    </div>
+
                     <div className="relative">
                         <button onClick={() => setShow(!show)}>
                             <MdOutlineGridOn className="text-2xl text-gray-500 hover:text-gray-700" />
@@ -29,6 +49,7 @@ export default function Navbar() {
                                 <AppSelection />
                             </div>
                         )}
+
                     </div>
 
                     <img
@@ -38,6 +59,7 @@ export default function Navbar() {
                     />
 
                 </div>
+
             </div>
 
             <div className='flex gap-10 ml-65 text-gray-600'>
@@ -51,7 +73,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaSearch /> Todo
+                    <FaSearch /> {t("navbar.todo")}
                 </NavLink>
 
                 <NavLink
@@ -63,7 +85,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaToolbox /> Proyectos
+                    <FaToolbox /> {t("navbar.proyectos")}
                 </NavLink>
 
 
@@ -76,7 +98,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaRegBuilding /> Experiencia
+                    <FaRegBuilding /> {t("navbar.experiencia")}
                 </NavLink>
 
 
@@ -89,8 +111,10 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaGraduationCap /> Educación
+                    <FaGraduationCap /> {t("navbar.educacion")}
                 </NavLink>
+
+
 
 
             </div>

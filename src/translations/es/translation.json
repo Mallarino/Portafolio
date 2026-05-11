@@ -1,0 +1,91 @@
+
+
+{
+    "searchInput": {
+        "todo": "Todo",
+        "imagenes": "Imagenes",
+        "proyectos": "Proyectos",
+        "experiencia": "Experiencia",
+        "educacion": "Educacion"
+    },
+    "navbar": {
+        "todo": "Todo",
+        "proyectos": "Proyectos",
+        "experiencia": "Experiencia",
+        "educacion": "Educación",
+        "idioma1": "Español",
+        "idioma2": "Inglés"
+    },
+    "results": {
+        "partOne": "Cerca de",
+        "partTwo": "resultados",
+        "segundos": "Segundos"
+    },
+
+    "peopleAsk":{
+        "title": "Más Preguntas",
+        "question":{
+            "trabajo": "Donde he trabajado?",
+            "tecnologias": "Que tecnologias manejo?",
+            "experiencia": "Que tipo de proyectos he realizado?"
+        },
+        "answer":{
+            "trabajo": "He desarrollado proyectos propios y trabajado en Nexos Software, participando en el desarrollo y optimización de aplicaciones web y móviles dentro de entornos profesionales. Para mas detalles mira mi 'Experiencia'.",
+            "tecnologias": "Java (Junit, Mockito, Springboot), JavaScript (React.js, React Native), SQL",
+            "experiencia": "He desarrollado aplicaciones full-stack y móviles utilizando React, React Native y Spring Boot, integrando APIs y servicios en la nube."
+        }
+    },
+
+    "searchResultItem": {
+        "todo": {
+            "section": {
+                "sobreMi": "> Sobre mi",
+                "proyectos": "> Proyectos",
+                "experiencia": "> Experiencia"
+            }, 
+
+            "title": {
+                "quienSoy": "Quien soy?",
+                "portafolio": "Portafolio",
+                "skyVault": "Sky Vault",
+                "supaNote": "SupaNote",
+                "experiencia": "Experiencia",
+                "aprendizDesarrollo": "Aprendiz de desarrollo",
+                "analistaDesarrollo": "Analista de desarrollo junior"
+            }, 
+
+            "descripcion":{
+                "quienSoy": "Soy desarrollador de software con experiencia en la creación de APIs RESTful con Spring Boot, así como en desarrollo web con React y aplicaciones móviles con React Native.",
+                "supaNote": "Aplicación de notas Full-Stack utilizando Springboot, MySql y React, asegurando la aplicación utilizando autenticación basada en JWT con Spring Security.",
+                "skyVault": "Aplicación móvil de aviación desarrollada con React Native y Expo, diseñada para registrar avistamientos de aeronaves, almacenar fotografías y gestionar información asociada a cada registro. Integra Firebase para autenticación y almacenamiento en la nube.",
+                "portafolio": "Portafolio personal inspirado en el famoso buscador de Google.",
+                "aprendizDesarrollo": "Desarrollar aplicaciones fullstack utilizando Angular 17, Spring boot, SQL. Colaborar en incidencias de aplicativos internos",
+                "analistaDesarrollo": "Desarrollé componentes escalables y reutilizables utilizando React, para mejorar la mantenibilidad y escalabilidad de las aplicaciones. Colaboré en el desarrolló de una aplicación móvil con React Native y Expo, que permitía al usuario ver clientes y proveedores, y descargar documentos PDF. Se integró con servicios de Google Firebase como Authentication, Firestore y Storage. Se le dió estilo a la aplicación con el framework Tailwind CSS."
+            }
+        }
+        
+    },
+
+    "experienceItem":{
+        "company": "Nexos Software",
+        "posicion":{
+            "aprendiz": "Aprendiz de desarrollo",
+            "analista": "Analista de desarrollo junior"
+        },
+        "descripcion":{
+            "aprendiz": "Apoyar en el desarrollo de aplicaciones fullstack utilizando Angular 17, Spring boot, SQL. Colaborar en incidencias de aplicativos internos",
+            "analista": "Desarrollé componentes escalables y reutilizables utilizando React, para mejorar la mantenibilidad y escalabilidad de las aplicaciones. Colaboré en el desarrolló de una aplicación móvil con React Native y Expo, que permitía al usuario ver clientes y proveedores, y descargar documentos PDF. Se integró con servicios de Google Firebase como Authentication, Firestore y Storage. Se le dió estilo a la aplicación con el framework Tailwind CSS."
+        },
+        "fecha":{
+            "aprendiz": "Dic 2023 - Jun 2024",
+            "analista": "Jun 2024 - Ago 2024"
+        }
+    },
+
+    "educationItem":{
+        "academia": "CESDE",
+        "descripcion": "Técnico en desarrollo de software",
+        "fecha": "Ene 2023 - Jun 2024"
+    }
+
+}

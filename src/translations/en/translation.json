@@ -1,0 +1,102 @@
+{
+  "searchInput": {
+    "todo": "All",
+    "imagenes": "Images",
+    "proyectos": "Projects",
+    "experiencia": "Experience",
+    "educacion": "Education"
+  },
+
+  "navbar": {
+    "todo": "All",
+    "proyectos": "Projects",
+    "experiencia": "Experience",
+    "educacion": "Education",
+    "idioma1": "Spanish",
+    "idioma2": "English"
+  },
+
+  "results": {
+      "partOne": "About",
+      "partTwo": "results",
+      "segundos": "seconds"
+    },
+
+  "peopleAsk": {
+    "title": "More Questions",
+
+    "question": {
+      "trabajo": "Where have I worked?",
+      "tecnologias": "What technologies do I use?",
+      "experiencia": "What kind of projects have I worked on?"
+    },
+
+    "answer": {
+      "trabajo": "I have developed personal projects and worked at Nexos Software, participating in the development and optimization of web and mobile applications within professional environments. For more details, check my 'Experience' section.",
+
+      "tecnologias": "Java (JUnit, Mockito, Spring Boot), JavaScript (React.js, React Native), SQL",
+
+      "experiencia": "I have developed full-stack and mobile applications using React, React Native, and Spring Boot, integrating APIs and cloud services."
+    }
+  },
+
+  "searchResultItem": {
+    "todo": {
+      "section": {
+        "sobreMi": "> About Me",
+        "proyectos": "> Projects",
+        "experiencia": "> Experience"
+      },
+
+      "title": {
+        "quienSoy": "Who am I?",
+        "portafolio": "Portfolio",
+        "skyVault": "Sky Vault",
+        "supaNote": "SupaNote",
+        "experiencia": "Experience",
+        "aprendizDesarrollo": "Software Development Apprentice",
+        "analistaDesarrollo": "Junior Development Analyst"
+      },
+
+      "descripcion": {
+        "quienSoy": "I am a software developer with experience building RESTful APIs using Spring Boot, as well as web development with React and mobile applications with React Native.",
+
+        "supaNote": "Full-stack notes application built using Spring Boot, MySQL, and React, secured with JWT-based authentication using Spring Security.",
+
+        "skyVault": "Aviation mobile application developed with React Native and Expo, designed to register aircraft sightings, store photographs, and manage information associated with each record. It integrates Firebase for authentication and cloud storage.",
+
+        "portafolio": "Personal portfolio inspired by the famous Google search engine.",
+
+        "aprendizDesarrollo": "Develop full-stack applications using Angular 17, Spring Boot, and SQL. Collaborate on issues related to internal applications.",
+
+        "analistaDesarrollo": "Developed scalable and reusable components using React to improve application maintainability and scalability. Collaborated on the development of a mobile application using React Native and Expo, allowing users to view clients and suppliers and download PDF documents. Integrated Google Firebase services such as Authentication, Firestore, and Storage. Styled the application using the Tailwind CSS framework."
+      }
+    }
+  },
+
+  "experienceItem": {
+    "company": "Nexos Software",
+
+    "posicion": {
+      "aprendiz": "Software Development Apprentice",
+      "analista": "Junior Development Analyst"
+    },
+
+    "descripcion": {
+      "aprendiz": "Support the development of full-stack applications using Angular 17, Spring Boot, and SQL. Collaborate on issues related to internal applications.",
+
+      "analista": "Developed scalable and reusable React components to improve application maintainability and scalability. Collaborated on the development of a mobile application using React Native and Expo, allowing users to view clients and suppliers and download PDF documents. Integrated Google Firebase services such as Authentication, Firestore, and Storage. Styled the application using the Tailwind CSS framework."
+    },
+
+    "fecha": {
+      "aprendiz": "Dec 2023 - Jun 2024",
+      "analista": "Jun 2024 - Aug 2024"
+    }
+  },
+
+  "educationItem": {
+    "academia": "CESDE",
+    "descripcion": "Software Development Technician",
+    "fecha": "Jan 2023 - Jun 2024"
+  }
+}

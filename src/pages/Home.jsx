@@ -1,15 +1,34 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import profilePhoto from "../assets/profilePhoto.jpg";
 import SearchInput from '../components/SearchInput';
+import { IoLanguage } from "react-icons/io5";
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 export default function Home() {
+
+    const [show, setShow] = useState(false)
+    const [showLanguage, setShowLanguage] = useState(false)
+
+    const { t } = useTranslation()
+
     return (
         <div className="min-h-screen flex flex-col bg-white">
 
             {/* Navbar */}
             <div className="flex justify-end items-center gap-6 px-8 py-4 text-gray-600">
+
+                <div className="relative">
+                    <button onClick={() => setShowLanguage(!showLanguage)}>
+                        <IoLanguage className="text-2xl text-gray-500 hover:text-gray-700" />
+                    </button>
+                    {showLanguage && (
+                        <div>
+                            <LanguageSwitcher closeMenu={() => setShowLanguage(false)} />
+                        </div>
+                    )}
+                </div>
 
                 <a
                     href="https://github.com/Mallarino"

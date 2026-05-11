@@ -6,8 +6,12 @@ import SearchResultItem from '../components/SearchResultItem'
 import Results from '../components/Results'
 import { all } from '../data/all'
 import PeopleAsk from '../components/PeopleAsk/PeopleAsk'
+import { useTranslation } from 'react-i18next'
+
 
 export default function All() {
+
+  const {t} = useTranslation();
 
   return (
     <>
@@ -16,13 +20,13 @@ export default function All() {
       <div className='ml-60 mt-4 w-150'>
         <Results number={all.length} />
 
-        <SearchResultItem section={"> Sobre mi"} link={""} title={all[0].title} description={all[0].description} />
+        <SearchResultItem section={t(all[0].sectionKey)} title={t(all[0].titleKey)} description={t(all[0].descriptionKey)} />
 
         <PeopleAsk />
 
         {all.slice(1).map((result) => (
           <>
-            <SearchResultItem key={result.id} {...result} />
+            <SearchResultItem key={result.id} section={t(result.sectionKey)} link={result.link} title={t(result.titleKey)} description={t(result.descriptionKey)} />
           </>
         ))}
 
