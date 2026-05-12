@@ -10,7 +10,7 @@ export default function SearchInput() {
     const navigate = useNavigate();
 
     return (
-        <div className="relative w-[600px]">
+        <div className="relative w-100 md:w-[600px]">
 
             <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
 

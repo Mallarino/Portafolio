@@ -23,19 +23,22 @@ export default function Navbar() {
     return (
         <>
             <div className='flex items-center m-7 gap-10'>
-                <Letters />
-                <SearchInput />
 
+                <Letters />
+
+                <div className='hidden md:block'>
+                    <SearchInput />
+                </div>
 
                 <div className='flex items-center ml-auto gap-10'>
+
                     <div className="relative">
                         <button onClick={() => setShowLanguage(!showLanguage)}>
                             <IoLanguage className="text-2xl text-gray-500 hover:text-gray-700" />
                         </button>
+
                         {showLanguage && (
-                            <div>
-                                <LanguageSwitcher closeMenu={() => setShowLanguage(false)}/>
-                            </div>
+                            <LanguageSwitcher closeMenu={() => setShowLanguage(false)} />
                         )}
                     </div>
 
@@ -44,17 +47,12 @@ export default function Navbar() {
                             <MdOutlineGridOn className="text-2xl text-gray-500 hover:text-gray-700" />
                         </button>
 
-                        {show && (
-                            <div>
-                                <AppSelection />
-                            </div>
-                        )}
-
+                        {show && <AppSelection />}
                     </div>
 
                     <img
                         src={profilePhoto}
-                        className="w-12 h-12 ml-auto rounded-full object-cover object-right border border-gray-200 shadow-sm"
+                        className="w-12 h-12 rounded-full object-cover border border-gray-200 shadow-sm"
                         alt="Profile"
                     />
 
@@ -62,7 +60,7 @@ export default function Navbar() {
 
             </div>
 
-            <div className='flex gap-10 ml-65 text-gray-600'>
+            <div className='flex justify-center gap-5 md:justify-start md:ml-65 md:gap-10 md:text-gray-600'>
 
                 <NavLink
                     to="/todo"
@@ -73,7 +71,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaSearch /> {t("navbar.todo")}
+                    <FaSearch className='hidden md:block'/> {t("navbar.todo")}
                 </NavLink>
 
                 <NavLink
@@ -85,7 +83,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaToolbox /> {t("navbar.proyectos")}
+                    <FaToolbox className='hidden md:block'/> {t("navbar.proyectos")}
                 </NavLink>
 
 
@@ -98,7 +96,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaRegBuilding /> {t("navbar.experiencia")}
+                    <FaRegBuilding className='hidden md:block'/> {t("navbar.experiencia")}
                 </NavLink>
 
 
@@ -111,7 +109,7 @@ export default function Navbar() {
                         }`
                     }
                 >
-                    <FaGraduationCap /> {t("navbar.educacion")}
+                    <FaGraduationCap className='hidden md:block'/> {t("navbar.educacion")}
                 </NavLink>
 
 

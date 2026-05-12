@@ -17,7 +17,7 @@ export default function All() {
     <>
       <Navbar />
 
-      <div className='ml-60 mt-4 w-150'>
+      <div className='p-5 mt-2 md:w-150 md:ml-60'>
         <Results number={all.length} />
 
         <SearchResultItem section={t(all[0].sectionKey)} title={t(all[0].titleKey)} description={t(all[0].descriptionKey)} />

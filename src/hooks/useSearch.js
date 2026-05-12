@@ -10,7 +10,7 @@ export function useSearch() {
 
   const {t, i18n} = useTranslation();
 
-  const options = [t("searchInput.todo"), t("searchInput.imagenes"), t("searchInput.proyectos"), t("searchInput.experiencia"), t("searchInput.educacion")];
+  const options = [t("searchInput.todo"), t("searchInput.proyectos"), t("searchInput.experiencia"), t("searchInput.educacion")];
 
   const filtered = useMemo(() => {
     return options.filter((item) =>

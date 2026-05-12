@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <>
       <Navbar />
-      <div className='ml-60 mt-4 w-150'>
+      <div className='pb-5 md:w-150 md:ml-60'>
         <Results number={experience.length}/>
         {experience.map((item) => (
           <ExperienceItem company={t(item.companyKey)} position={t(item.positionKey)} description={t(item.descriptionKey)} date={t(item.dateKey)} />

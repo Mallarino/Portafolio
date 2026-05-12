@@ -12,7 +12,7 @@ export default function Education() {
   return (
     <>
       <Navbar />
-      <div className='ml-60 mt-4 w-150'>
+      <div className='px-5 mt-4 md:w-150 md:ml-60'>
         <Results number={education.length} />
         {education.map((item) => (
           <EducationItem academy={t(item.academyKey)} description={t(item.descriptionKey)} date={t(item.dateKey)} />

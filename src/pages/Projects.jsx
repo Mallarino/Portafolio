@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <>
       <Navbar />
-      <div className='ml-60 mt-4 w-150'>
+      <div className='mt-4 px-5 md:w-150 md:ml-60'>
         <Results number={projects.length} />
 
         {projects.map((item) => (

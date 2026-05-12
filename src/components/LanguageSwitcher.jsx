@@ -12,7 +12,7 @@ function LanguageSwitcher({ closeMenu }) {
   };
 
   return (
-    <div className="absolute right-0 w-44 bg-white border border-gray-200 rounded-2xl shadow-xl py-2 overflow-hidden">
+    <div className="absolute right-0 w-44 bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden">
 
       <button
         onClick={() => changeLanguage("es")}
